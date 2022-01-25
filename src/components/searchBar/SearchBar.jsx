@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { func } from 'prop-types';
 import {
   StyledInput,
   SearchButton,
@@ -37,14 +36,6 @@ const SearchBar = ({ onTitleSubmit }) => {
       </form>
     </div>
   );
-}
-
-SearchBar.propTypes = {
-  onTitleSubmit: func
-}
-
-SearchBar.defaultProps = {
-  onTitleSubmit: () => null
 }
 
 export default SearchBar;

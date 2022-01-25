@@ -2,6 +2,8 @@
 
 This project is a react app using the OMDB api to render movies.
 
+[OMDB API](https://www.omdbapi.com/)
+
 ## Deploy
 
 https://fast-project-1.netlify.app/
