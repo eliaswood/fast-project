@@ -1,6 +1,6 @@
 # Elias's OMDB Poster App
 
-This project is a react app using the OMDB api to render movies.
+This project is a react app using the OMDB api to search for movies or actors and add movies to a playlist.
 
 [OMDB API](https://www.omdbapi.com/)
 
