@@ -6,8 +6,8 @@ import {
   Poster,
   InPlaylist,
   PosterWrapper
-} from './moviePoster.styles'
-import { faPlus, faTimes } from '@fortawesome/free-solid-svg-icons'
+} from './moviePoster.styles';
+import { faPlus, faTimes } from '@fortawesome/free-solid-svg-icons';
 
 const MoviePoster = ({ imgLink, imgAlt, movie, isPlaylist }) => {
   const { addToPlaylist, removeFromPlaylist } = usePlaylist();
@@ -27,12 +27,12 @@ const MoviePoster = ({ imgLink, imgAlt, movie, isPlaylist }) => {
         return (
           <AddToPlayListButton
             onClick={() => {
-              addToPlaylist(movie)
-              setIsInPlaylist(true)
+              addToPlaylist(movie);
+              setIsInPlaylist(true);
             }}
           >
-          <Icon icon={faPlus} />
-        </AddToPlayListButton>
+            <Icon icon={faPlus} />
+          </AddToPlayListButton>
         )    
       }
     }

@@ -31,3 +31,14 @@ export const HeaderWrapper = styled.div`
   align-items: center;
   margin-bottom: 16px;
 `;
+
+export const Footer = styled.div`
+  font-family: sans-serif;
+  font-size: 16px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;

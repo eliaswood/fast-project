@@ -1,14 +1,9 @@
-import _ from 'lodash';
-import styled from 'styled-components'
 import PlaylistContextProvider from './context/playlist';
 import SearchHistoryContextProvider from './context/searchHistory';
 import { Routes, Route } from "react-router-dom";
 import SearchPage from './pages/searchPage/SearchPage';
 import PlaylistPage from './pages/playlistPage/PlaylistPage';
-
-const AppWrapper = styled.div`
-  margin: 20px;
-`;
+import { AppWrapper } from './App.styles';
 
 function App() {
   return (

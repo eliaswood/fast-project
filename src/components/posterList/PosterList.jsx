@@ -1,4 +1,4 @@
-import MoviePoster from '../moviePoster/MoviePoster';
+import MoviePoster from '../moviePoster';
 
 const PosterList = ({ list, isPlaylist }) => {
   return list ? (
@@ -11,7 +11,7 @@ const PosterList = ({ list, isPlaylist }) => {
           title={movie.Title}
           imgLink={movie.Poster}
           imgAlt={`Image not found for: ${movie.Title}`}
-          />
+        />
       )
     })) : null;
 }

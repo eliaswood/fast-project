@@ -1,18 +1,23 @@
 import { useState } from 'react';
 import { func } from 'prop-types';
-import { StyledInput, SearchButton, SearchIcon, FlexWrapper } from './SearchBar.styles'
+import {
+  StyledInput,
+  SearchButton,
+  SearchIcon,
+  FlexWrapper
+} from './SearchBar.styles';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 
 const SearchBar = ({ onTitleSubmit }) => {
   const [input, setInput] = useState('');
 
   function onInputChange(e) {
-    setInput(e.target.value)
+    setInput(e.target.value);
   }
 
   function onFormSubmit(e) {
     e.preventDefault();
-    onTitleSubmit(input)
+    onTitleSubmit(input);
   };
 
   return (

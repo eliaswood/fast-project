@@ -5,8 +5,9 @@ import {
   FlexWrapper,
   StyledLinkButton,
   PlaylistHeader,
-  HeaderWrapper
-} from './PlayListPage.styles'
+  HeaderWrapper,
+  Footer
+} from './PlayListPage.styles';
 
 
 function PlaylistPage() {
@@ -25,6 +26,7 @@ function PlaylistPage() {
       <FlexWrapper>
         <PosterList isPlaylist={true} list={playlist} />
       </FlexWrapper>
+      <Footer>My favorite color is white.</Footer>
     </>
   )
 }

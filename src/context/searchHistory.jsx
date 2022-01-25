@@ -3,7 +3,7 @@ import movie from '../api/movies';
 import _ from 'lodash';
 
 export const Context = createContext();
-export const useSearchHistory = () => useContext(Context)
+export const useSearchHistory = () => useContext(Context);
 
 export default function SearchHistoryContextProvider({ children }) {
   const [movies, setMovies] = useState();
