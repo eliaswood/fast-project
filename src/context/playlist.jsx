@@ -5,9 +5,10 @@ export const usePlaylist = () => useContext(Context)
 
 export default function PlaylistContextProvider({ children }) {
   const [playlist, setPlaylist] = useState([]);
-
+  
   function addToPlaylist(movie) {
     const isInPlaylist = playlist.find(item => item.imdbID === movie.imdbID)
+
     if (!isInPlaylist) {
       setPlaylist([...playlist, movie]);
     } else {
